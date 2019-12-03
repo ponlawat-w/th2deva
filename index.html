@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title></title>
+    <script src="js/vue.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+  </head>
+  <body>
+    <div id="app">
+      <h1 class="center">ภาษาไทย → देवनागरी</h1>
+      <div class="right">
+        <label>
+          <input type="checkbox" title="Dark Mode" v-model="darkMode">
+          โหมดกลางคืน - रात्रि संस्करण
+        </label>
+      </div>
+      <div class="center">
+        <textarea id="main-textarea" v-model="text" @keypress="change"></textarea>
+      </div>
+      <div class="center">
+        <a href="javascript:void(0);" class="copy-btn" @click="copy();">
+          คัดลอก - प्रतिलिपि
+        </a>
+      </div>
+    </div>
+    <script src="js/script.js" type="module"></script>
+  </body>
+</html>
